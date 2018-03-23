@@ -14,6 +14,9 @@ If we define the previous example as [[[1],[2],[3]],[[4],[5].[6]]], we are addin
 In summary, [] is a vector (matrix with one row). For adding more rows we define as [[],[], ... ,[]]. 
 
 
+![image](https://user-images.githubusercontent.com/15813546/37853770-c98d6034-2f05-11e8-8ac6-476f7e1a817d.png)
+
+
 [] is one row.
 
 [[],[]] is two rows.
