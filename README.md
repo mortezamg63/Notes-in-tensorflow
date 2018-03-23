@@ -3,11 +3,12 @@ Before going to notes, it is necessary to bring out describtions about understan
 
 In order to define a vector, we use only []. This is a matrix with one row; but the number of columns is depend on number of numbers in the [], ie. [1, 2] or [1, 2, 3, 4, 5].
 
-![image](https://user-images.githubusercontent.com/15813546/37853020-853a116e-2f02-11e8-800a-6375dee0b60f.png)
+![b2](https://user-images.githubusercontent.com/15813546/37853255-69454360-2f03-11e8-8777-fa67017dd2f6.png)
 
 
 If we want to define a matrix with two rows, we must define it as [[first row],][second row]]. Each row has the same number of columns for example [[1, 2, 3],[4, 5, 6]]. It is a matrix with two rows and three columns. Actually, it is a matrix in shape of   2x3.
 
+![b1](https://user-images.githubusercontent.com/15813546/37853254-672a1d80-2f03-11e8-9abc-3aec0f6f8ba3.png)
 
 If we define the previous example as [[[1],[2],[3]],[[4],[5].[6]]], we are adding depth to the matrix. So the matrix is in shape of 2x3x1. Accordingly, [[[1,1,1],[2,2,2],[3,3,3]],[[4,4,4],[5,5,5],[6,6,6]]] is  a matrix in shape of 2x2x3.
 In summary, [] is a vector (matrix with one row). For adding more rows we define as [[],[], ... ,[]]. 
