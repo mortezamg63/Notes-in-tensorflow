@@ -24,7 +24,7 @@ In summary, [] is a vector (matrix with one row). For adding more rows we define
 [[],[],[]] is three rows.
 
 
-while we are adding numbers to the above brackets, we are defining the columns in each row. For example [[1, 2, 3],[4, 5, 6]] is 2x3 (two rows and three columns). If we replace numbers with brackets, we are defining depth in matrix like [[[1],[2],[3]],[[4],[5],[6]]]. This matrix is in shape of 2x3x1. By replacing numbers with brackets, we are actually adding more dimension to matrix.
+In summary, while we are adding numbers to the above brackets, we are defining the columns in each row. For example [[1, 2, 3],[4, 5, 6]] is 2x3 (two rows and three columns). If we replace numbers with brackets, we are defining depth in matrix like [[[1],[2],[3]],[[4],[5],[6]]]. This matrix is in shape of 2x3x1. By replacing numbers with brackets, we are actually adding more dimension to the matrix.
 
 ## tf.unstack
 This function is used to chop a matrix to slices. In order to show how this function can be used for separating a matrix to different parts/slices, I want to illustrate this by means of picture. 
