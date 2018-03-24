@@ -112,3 +112,48 @@ sess = tf.Session()
 print(sess.run(tf.reduce_max(X)))  # output: 8.
 
 ```
+
+From now I am going to talk over tf.reduce_mean() to show operation in different axises. At first, the following picture is case in point to show mean operation in different axises.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37861949-b6d415ac-2f62-11e8-9f75-b8f688fc01ba.png">
+</p>
+
+```ruby
+
+X = tf.constant([[1, 1],[2, 2]])
+sess = tf.Session()
+print(sess.run(tf.reduce_mean(X)))  # output: 1.5
+print(sess.run(tf.reduce_mean(X,axis=0)))  # output: [1.5, 1.5]
+print(sess.run(tf.reduce_mean(X,axis=1)))  # output: [1., 2.]
+
+```
+
+```ruby
+
+X=tf.constant([[1, 1],[2, 2],[3, 3]])
+sess = tf.Session()
+print(sess.run(tf.reduce_mean(X)))  # output: 2.
+print(sess.run(tf.reduce_mean(X,axis=0)))  # output: [2., 2.]
+print(sess.run(tf.reduce_mean(X,axis=1)))  # output: [1., 2., 3.]
+
+```
+
+Now, I want to show a 3D matrix and the output of tf.reduce_mean in different axises again. 
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37861894-3e313c98-2f61-11e8-9bd3-b54604d88e2e.png">
+</p>
+
+```ruby
+
+X=tf.constant([[[1, 2], [3, 4]],[[5, 6], [7, 8]]])
+sess = tf.Session()
+print(sess.run(tf.reduce_mean(X)))  # output: 4.5
+print(sess.run(tf.reduce_mean(X,axis=0)))  
+# output: [[3., 4.],
+           [5., 6.]]
+print(sess.run(tf.reduce_mean(X,axis=1)))  # output: [1., 2., 3.]
+
+```
