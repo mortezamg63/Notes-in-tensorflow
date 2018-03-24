@@ -44,5 +44,6 @@ At first, it should be mentioned that it is necessary to specify dimension or ax
 Two important parameters in tf.unstack operation are input matrix and axis. I want to extract rows in X (above matrix). In other words, linear patches can be extracted in axis zero by means of tf.unstack(X, axis=0). The following pictures show how the above matrix is sliced by unstack operation.
 
 <p align="center">
-   <img src="https://user-images.githubusercontent.com/15813546/37860474-7c4ed580-2f43-11e8-9740-f44b77c42a67.png">  
+   <img src="https://user-images.githubusercontent.com/15813546/37860474-7c4ed580-2f43-11e8-9740-f44b77c42a67.png"> 
+  colors shows direction of chopping the matrix by unstack operation
 </p>
