@@ -176,3 +176,10 @@ print(sess.run(tf.reduce_mean(X, axis=2)))
 <p align="center">
   tf.reduce_mean(X, axis=1)
 </p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37862550-4f164782-2f6c-11e8-8a09-b8b4da6022bc.png">
+</p>
+<p align="center">
+  tf.reduce_mean(X, axis=2)
+</p>
