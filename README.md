@@ -80,5 +80,5 @@ Moreover, the following picture shows the stack operation in axis one. This axis
   <img src="https://user-images.githubusercontent.com/15813546/37860671-fbd886e4-2f47-11e8-870f-2211bcbfc48a.png">
 </p>
 <p align="center">
-  tf.stack(X, axis=0)
+  tf.stack(X, axis=1)
 </p>
