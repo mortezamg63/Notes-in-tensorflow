@@ -30,7 +30,7 @@ In summary, [] is a vector (matrix with one row). For adding more rows we define
 
 In summary, while we are adding numbers to the above brackets, we are defining the columns in each row. For example [[1, 2, 3],[4, 5, 6]] is 2x3 (two rows and three columns). If we replace numbers with brackets, we are defining depth in matrix like [[[1],[2],[3]],[[4],[5],[6]]]. This matrix is in shape of 2x3x1. By replacing numbers with brackets, we are actually adding more dimension to the matrix. 
 
-## tf.unstack
+## tf.unstack operation
 All matrices are described in previous section are known as tensor in tensorflow and other deep learning libraries. TensorFlow provides several operations to slice or extract parts of a tensor, or join multiple tensors together (for seeing the list click [here](https://www.tensorflow.org/api_guides/python/array_ops#Slicing_and_Joining). Among all operations, our goal is look at unstack operation closely.
 
 This operation is used to chop a matrix to slices. In order to show how this operation can be used for separating a matrix to different parts/slices, I want to illustrate by means of pictures. This operation take matrix or tensor and axis number as input parameters. Then chop the input matrix to different parts in axis direction.
@@ -56,4 +56,29 @@ Finally, we can extract depth patches from matrix using tf.unstack(X, axis=2) as
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/15813546/37860550-04a4bfca-2f45-11e8-8485-bd9219c0d07d.png">
+</p>
+
+## tf.stack operation
+This operation goes against tf.unstack. It gets patches and join them together based on axis. For instance we can join the patches in linear and columnar direction. To illustrate this operation, assume that we have the following patches are specified by colors.
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/15813546/37860648-6d3b671c-2f47-11e8-8ca5-35ed8960e230.png">
+</p>
+
+Now stacking or packing the patches together in axis zero is as following picture.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37860656-bc296a7c-2f47-11e8-8cc3-b1951989d251.png">
+</p>
+<p align="center">
+  tf.stack(X, axis=0)
+</p>
+
+Moreover, the following picture shows the stack operation in axis one.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37860671-fbd886e4-2f47-11e8-870f-2211bcbfc48a.png">
+</p>
+<p align="center">
+  tf.stack(X, axis=0)
 </p>
