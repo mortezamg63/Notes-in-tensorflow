@@ -153,8 +153,13 @@ sess = tf.Session()
 print(sess.run(tf.reduce_mean(X)))  # output: 4.5
 print(sess.run(tf.reduce_mean(X,axis=0)))  
 # output: [[3., 4.],
-           [5., 6.]]
-print(sess.run(tf.reduce_mean(X,axis=1)))  # output: [1., 2., 3.]
+#           [5., 6.]]
+print(sess.run(tf.reduce_mean(X,axis=1)))  
+# output: [[2., 3.],
+#           [6., 7.]]
+print(sess.run(tf.reduce_mean(X, axis=2)))
+#output: [[1.5, 3.5]
+          [5.5, 7.5]]
 
 ```
 
@@ -163,4 +168,11 @@ print(sess.run(tf.reduce_mean(X,axis=1)))  # output: [1., 2., 3.]
 </p>
 <p align="center">
   tf.reduce_mean(X, axis=0)
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37862415-13b6218c-2f6a-11e8-917a-7c134f2e835c.png">
+</p>
+<p align="center">
+  tf.reduce_mean(X, axis=1)
 </p>
