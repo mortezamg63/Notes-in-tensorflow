@@ -41,9 +41,19 @@ At first, it should be mentioned that it is necessary to specify dimension or ax
   <img src="https://user-images.githubusercontent.com/15813546/37860397-a22ab88e-2f41-11e8-8b0a-357ff9e5bc7c.png">
 </p>
 
-Two important parameters in tf.unstack operation are input matrix and axis. I want to extract rows in X (above matrix). In other words, linear patches can be extracted in axis zero by means of tf.unstack(X, axis=0). The following pictures show how the above matrix is sliced by unstack operation.
+Two important parameters in tf.unstack operation are input matrix and axis. I want to extract rows in X (above matrix). In other words, linear patches can be extracted in axis zero by means of tf.unstack(X, axis=0). The following pictures show how the above matrix is sliced by unstack operation. As it is shown, colors show direction of chopping the matrix by unstack operation
 
 <p align="center">
-   <img src="https://user-images.githubusercontent.com/15813546/37860474-7c4ed580-2f43-11e8-9740-f44b77c42a67.png"> 
-  colors shows direction of chopping the matrix by unstack operation
+   <img src="https://user-images.githubusercontent.com/15813546/37860474-7c4ed580-2f43-11e8-9740-f44b77c42a67.png">   
+</p>
+
+In case of extracting columnar patches, unstack(X, axis=1) must be used. The following pictures show slicing matrix in columnar direction.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37860516-9c4a4972-2f44-11e8-8960-cd1934297916.png">  
+</p>
+Finally, we can extract depth patches from matrix using tf.unstack(X, axis=2) as following pictures.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37860550-04a4bfca-2f45-11e8-8485-bd9219c0d07d.png">
 </p>
