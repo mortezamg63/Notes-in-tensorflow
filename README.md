@@ -82,3 +82,33 @@ Moreover, the following picture shows the stack operation in axis one. This axis
 <p align="center">
   tf.stack(X, axis=1)
 </p>
+
+## tf.reduce_mean, tf.reduce_max and ...
+In this section I am going to introduce a series of functions that are along with doing one operation and dimension reduction in tensorflow library. These functions apply some basic operations on elements in matrices or tensors, then they turn out matrices with fewer dimensions. However, there are more parameter to describe, and they make these functions far from dimension reduction. I describe basic tasks in the functinos that return outputs with smaller matrices. The list of common functions are here:
+
+tf.reduce_mean()
+
+tf.reduce_max()
+
+tf.reduce_min()
+
+tf.reduce_prod()
+
+tf.reduce_sum()
+and other functions that are not mentioned here.
+
+Anyway, the mentioned functions use the same method for doing different operations. In other words, they do operations in different axises in matrix/tensor. Two important parameters of these functions are input matrix and axis. If we just send input parameter, the operation will be done on all elements and all axises of matrix. For instance, take the following picture that shows a matrix as base matrix for using the functions. Assume the name of matrix is 'X'.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37861894-3e313c98-2f61-11e8-9bd3-b54604d88e2e.png">
+</p>
+
+In case of using tf.reduce_max(X). The result is 8.
+
+```ruby
+
+X = tf.constant([[[1., 2.],[3., 4.]],[[5., 6.],[7., 8.]]])
+sess = tf.Session()
+print(sess.run(tf.reduce_max(X)))  # output: 8.
+
+```
