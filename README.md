@@ -157,3 +157,10 @@ print(sess.run(tf.reduce_mean(X,axis=0)))
 print(sess.run(tf.reduce_mean(X,axis=1)))  # output: [1., 2., 3.]
 
 ```
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15813546/37862310-76a94a50-2f68-11e8-90cf-2f3887b5f4bc.png">
+</p>
+<p align="center">
+  tf.reduce_mean(X, axis=0)
+</p>
