@@ -65,7 +65,7 @@ This operation goes against tf.unstack. It gets patches and join them together b
    <img src="https://user-images.githubusercontent.com/15813546/37860648-6d3b671c-2f47-11e8-8ca5-35ed8960e230.png">
 </p>
 
-Now stacking or packing the patches together in axis zero is as following picture.
+Now stacking or packing the patches together in axis zero is as following picture. This axis joins patches in row direction.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/15813546/37860656-bc296a7c-2f47-11e8-8cc3-b1951989d251.png">
@@ -74,7 +74,7 @@ Now stacking or packing the patches together in axis zero is as following pictur
   tf.stack(X, axis=0)
 </p>
 
-Moreover, the following picture shows the stack operation in axis one.
+Moreover, the following picture shows the stack operation in axis one. This axis joins patches in column direction
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/15813546/37860671-fbd886e4-2f47-11e8-870f-2211bcbfc48a.png">
