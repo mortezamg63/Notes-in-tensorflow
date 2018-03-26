@@ -404,11 +404,7 @@ The outputs from every parallel layer is shown in the following picture.
      <img src="https://user-images.githubusercontent.com/15813546/37915979-eebd10bc-312f-11e8-9bfe-63e570a1c2a0.png">
 </p>
 <p align="center">
- The colors show that outputs of every layers are symmetric. 
-	
-Also, output of layers for angles 90 and -90 are symmetric. 
-
-Likewise, output of layers for angles 0 and 180 are symmetric too.
+ The colors show that outputs of every layers are symmetric. Also, output of layers for angles 90 and -90 are symmetric. Likewise, output of layers for angles 0 and 180 are symmetric too.
 </p>
 
 The goal for this experiment was getting the same values for all outputs, but they are against my expectation. After some experiment it could be figured out that rotation algorithm causes variation in output values. The default rotation algorithm is ‘nearest’.
