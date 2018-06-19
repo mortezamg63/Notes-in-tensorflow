@@ -239,7 +239,7 @@ with tf.Session() as sess:
 
 ```
 
- In case of setting NUM_PARALLEL_CONVS to 8, output of print(out.shape) is (1,8,24,24,1). Also if I set BATCH_SIZE too 10, the output of print(out.shape) is (10,8, 24, 24, 1). It is clear that everything is true. It seems that based on number of parallel layers and batch_size nothing is wrong and everything comes true.
+ In case of setting NUM_PARALLEL_CONVS to 8, output of print(out.shape) is (1,8,24,24,1). Also if I set BATCH_SIZE to 10, the output of print(out.shape) is (10,8, 24, 24, 1). It is clear that everything is true. It seems that based on number of parallel layers and batch_size nothing is wrong and everything comes true.
 
  In most papers this method is used to extract invariant transformations. But, element-wise max operation from output feature maps in the parallel layer is used to send final feature map and feed to next layers.
 For this purpose tf.reduce_max function with axis same as tf.stack must be used. So the parallel_layer function must be changed as following:
@@ -302,7 +302,7 @@ def conv_layer(input_):
 
 # Rotation Invariant Layer
 
-In this section, the goal is describing how to change conv_layer in a way that making the convolutional layer invariant to rotation. Based on the paper we just need to rotate kernel in convolutional layer, it ,however, is not pre-defined in tensorflow. Hence, we must define a our layer from scratch to fulfill our requirement. The implication is that we define the following function to use instead of the conv_layer function, which is described already.
+In this section, the goal is describing how to change conv_layer in a way that making the convolutional layer invariant to rotation. We just need to rotate kernel in convolutional layer. It ,however, is not pre-defined in tensorflow. Hence, we must implement and define the layer from scratch. The implication is that we define the following function rather thanconv_layer function, which is described already.
 
 ```ruby
 def rotInvar_conv_layer(input,index, num_input_channels, filter_size, num_filters, stride=1,    
@@ -384,7 +384,7 @@ print(max_out.shape)
 
 ```
 
-In order to verify that all things are working fine, I take one image with values one in all pixels in input image. Then apply our concolutional layer with four angles 0, 90,-90 and 180 degrees. For this purpose I create an image using np.ones function in numpy module and feed it to the convolution layer as following:
+In order to verify that all things are working fine, I took one image with values one in all pixels as input image. Then I apply my defined convolutional layer to four angles 0, 90,-90 and 180 degrees. For this purpose I create an image using np.ones function in numpy module and feed it to the convolution layer as following:
 
 ```ruby
 logit,concat = parallel_layer(x,[0,90, -90, 180])
@@ -407,4 +407,6 @@ The outputs from every parallel layer is shown in the following picture.
  The colors show that outputs of every layers are symmetric. Also, output of layers for angles 90 and -90 are symmetric. Likewise, output of layers for angles 0 and 180 are symmetric too.
 </p>
 
+<p hidden>
 The goal for this experiment was getting the same values for all outputs, but they are against my expectation. After some experiment it could be figured out that rotation algorithm causes variation in output values. The default rotation algorithm is ‘nearest’.
+</p>
