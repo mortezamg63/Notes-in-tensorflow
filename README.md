@@ -15,7 +15,7 @@ If we want to define a matrix with two rows, we must define it as [[first row],]
 </img>
 
 If we define the previous example as [[[1],[2],[3]],[[4],[5].[6]]], we are adding depth to the matrix. So the matrix is in shape of 2x3x1. Accordingly, [[[1,1,1],[2,2,2],[3,3,3]],[[4,4,4],[5,5,5],[6,6,6]]] is  a matrix in shape of 2x2x3.
-In summary, [] is a vector (matrix with one row). For adding more raws (extra dimension) we define as [[],[], ... ,[]]. 
+ [] is a vector (matrix with one row). For adding more raws (extra dimension) we define as [[],[], ... ,[]]. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/15813546/37853770-c98d6034-2f05-11e8-8ac6-476f7e1a817d.png">
@@ -28,7 +28,7 @@ In summary, [] is a vector (matrix with one row). For adding more raws (extra di
 [[],[],[]] is three rows.
 
 
-In summary, while we are adding numbers to the above brackets, we are defining the columns in each row. For example [[1, 2, 3],[4, 5, 6]] is 2x3 (two rows and three columns). If we replace numbers with brackets, we are defining depth in matrix like [[[1],[2],[3]],[[4],[5],[6]]]. This matrix is in shape of 2x3x1. By replacing numbers with brackets, we are actually adding more dimension to the matrix. 
+In other words, while we are adding numbers to the above brackets, we are defining the columns in each row. For example [[1, 2, 3],[4, 5, 6]] is 2x3 (two rows and three columns). If we replace numbers with brackets, we are defining depth in matrix like [[[1],[2],[3]],[[4],[5],[6]]]. This matrix is in shape of 2x3x1. By replacing numbers with brackets, we are actually adding more dimension to the matrix. 
 
 ## tf.unstack operation
 All matrices are described in previous section are known as tensor in tensorflow and other deep learning libraries. TensorFlow provides several operations to slice or extract parts of a tensor, or join multiple tensors together (for seeing the list click [here](https://www.tensorflow.org/api_guides/python/array_ops#Slicing_and_Joining). Among all operations, our goal is look at unstack operation closely.
