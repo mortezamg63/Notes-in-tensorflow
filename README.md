@@ -84,7 +84,7 @@ Moreover, the following picture shows the stack operation in axis one. This axis
 </p>
 
 ## tf.reduce_mean, tf.reduce_max and ...
-In this section I am going to introduce a series of functions that are along with doing one operation and dimension reduction in tensorflow library. These functions apply some basic operations on elements in matrices or tensors, then they turn out matrices with fewer dimensions. However, there are more parameter to describe, and they make these functions far from dimension reduction. I describe basic tasks in the functinos that return outputs with smaller matrices. The list of common functions are here:
+In this section I am going to introduce a series of functions that are along with doing one operation and dimension reduction in tensorflow library. These functions apply some basic operations on elements in matrices or tensors, then they turn out matrices with fewer dimensions. Although the functions can do more tasks far from the current description, the dimension reduction is focused here, and other taks are ignored. I describe basic tasks in the functinos that return outputs with smaller matrices. The list of common functions are here:
 
 tf.reduce_mean()
 
