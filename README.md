@@ -59,7 +59,7 @@ Finally, we can extract depth patches from matrix using tf.unstack(X, axis=2) as
 </p>
 
 ## tf.stack operation
-This operation goes against tf.unstack. It gets patches and join them together based on axis. For instance we can join the patches in linear and columnar direction. To illustrate this operation, assume that we have the following patches are specified by colors.
+This operation goes against tf.unstack. It gets patches and joins them together based on axis. For instance we can join the patches in linear and columnar direction. To illustrate this operation, assume that we have the following patches are specified by colors.
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/15813546/37860648-6d3b671c-2f47-11e8-8ca5-35ed8960e230.png">
