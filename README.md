@@ -216,7 +216,7 @@ print(sess.run(tf.reduce_mean(X, axis=2)))
 		return  concatenated
   ```
   
-  As you see in the parallel_layer function above, I use a for statement and create 5 parallel convolution layers.
+  As you see in the parallel_layer function above, I use a for statement and create 5 parallel convolution layers. The number 5 is the number of angles that are sent in function throught the angles parameter in the first line of above code.
 To use the layer and show the result, let me define a session and use the functions. For this purpose look at the following codes:
 
 ```ruby
