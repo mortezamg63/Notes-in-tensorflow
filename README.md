@@ -1,7 +1,7 @@
 # Notes-in-tensorflow
-Before going to notes in this page, it is necessary to bring out some describtions about understanding the matrix in python language. For this purpose, I want to describe  definition of vect and matrix.
+Before going to notes in this page, it is necessary to bring out some describtions about understanding the matrix in python language. For this purpose, I want to describe  definition of vector and matrix.
 
-In order to define a vector, we use only []. This is a matrix with one row; but the number of columns is depend on number of numbers in the [], ie. [1, 2] or [1, 2, 3, 4, 5].
+In order to define a vector, we use only []. This is a matrix with one row; but the number of columns is depend on the number of values in the [], ie. [1, 2] or [1, 2, 3, 4, 5].
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/15813546/37853255-69454360-2f03-11e8-8777-fa67017dd2f6.png">
