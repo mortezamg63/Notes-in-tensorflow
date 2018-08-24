@@ -97,7 +97,7 @@ tf.reduce_prod()
 tf.reduce_sum()
 and other functions that are not mentioned here.
 
-Anyway, the mentioned functions use the same method for doing different operations. In other words, they do operations in different axises in matrix/tensor. Two important parameters of these functions are input matrix and axis. If we just send input parameter, the operation will be done on all elements and all axises of matrix. For instance, take the following picture that shows a matrix as base matrix for using the functions. Assume the name of matrix is 'X'.
+Anyway, the mentioned functions use the same method for doing different operations. In other words, they do operations in different axises in matrix/tensor. Two important parameters of these functions are input matrix and axis. If we just send input parameter, the operation will be done on all elements and all axises of matrix. For instance, take the following picture that shows a matrix as base matrix for using the functions. Assume the name of the matrix is 'X'.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/15813546/37861894-3e313c98-2f61-11e8-9bd3-b54604d88e2e.png">
