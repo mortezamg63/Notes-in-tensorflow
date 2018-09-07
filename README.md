@@ -256,7 +256,7 @@ def parallel_layer(input_, angles=0):
 
 ```
 
-An instance out of the above code is shown in the following picture.
+An instance output of the above code is shown in the following picture.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/15813546/37915672-52a753d6-312f-11e8-93c7-805c5db9b355.png">
